@@ -1,0 +1,34 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+  - caption: Setup
+    chapters:
+    - file: 00_setup/readme.md
+    
+  - caption: Python Jupyter Notebooks
+    chapters:
+    - file: 01_juypter_notebooks/01_our_first_juptyer_notebook.ipynb
+    - file: 01_juypter_notebooks/02_Dont_try_this_at_home.ipynb
+    - file: 01_juypter_notebooks/03_image_processing.ipynb
+
+  - caption: AI-assisted Code Generation
+    chapters:
+    - file: 02_bia_bob/bia-bob-demo.ipynb
+    - file: 02_bia_bob/generate_notebook.ipynb
+    - file: 02_bia_bob/translating_notebooks.ipynb
+    - file: 02_bia_bob/bia_bob-statistical_testing.ipynb
+    - file: 02_bia_bob/under_the_hood.ipynb
+    
+  - caption: Links
+    chapters:
+    - url: https://doi.org/10.5281/zenodo.16793738
+      title: Download slides
+    - url: https://meetings.embo.org/event/25-lsm
+      title: EMBO LSM 2025
+    - url: https://creativecommons.org/licenses/by/4.0/
+      title: License CC-BY 4.0
+    - file: imprint
