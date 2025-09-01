@@ -4,7 +4,7 @@ This page contains training materials for the BioImage Analysis hands-on tutoria
 
 ## Target audience
 
-The notebooks are written for life scientists with basic experience in Python programming. As we have only 2 hours during the hands-on tutorial, it is recommended that everyone picks some exercises according to their skill-level and needs.
+The notebooks are written for life scientists with basic experience in Python programming. As we have only limited time during the hands-on tutorial, it is recommended that everyone picks some exercises according to their skill-level and needs.
 
 ## How to use these materials
 
