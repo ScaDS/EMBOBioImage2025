@@ -1,6 +1,6 @@
-# AI and NLP for BioImage Analysis at #EMBOBioImage 2025
+# Large Language Models for BioImage Analysis
 
-This page contains training materials for the BioImage Analysis hands-on tutorial at the [EMBO Practical Course Advanced Methods in Bio Image Analysis 2025](https://www.embl.org/about/info/course-and-conference-office/events/bia25-01).
+This page contains training materials for using Large Language Models for BioImage Analysis.
 
 ## Target audience
 
