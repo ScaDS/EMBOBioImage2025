@@ -1,4 +1,4 @@
-title: AI and NLP for BioImage Analysis #EMBOBioImage 2025
+title: Large Language Models for BioImage Analysis
 author: Robert Haase
 logo: logo.png
 
@@ -15,7 +15,7 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/ScaDS/EMBOBioImage2025
+  url: https://github.com/ScaDS/llm-bia-2025
   path_to_book: . # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 

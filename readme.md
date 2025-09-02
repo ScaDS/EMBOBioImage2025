@@ -1,6 +1,6 @@
-# AI and NLP for BioImage Analysis at #EMBOBioImage 2025
+# LLMs for BioImage Analysis
 
-This notebook collection part of the [EMBO Practical Course on Advanceed Methods in BioImage Analysis](https://www.embl.org/about/info/course-and-conference-office/events/bia25-01) at EMBL Heidelberg. The materials are rendered to this url:
+This notebook collection introduces how to use large language models for bio-image analysis. The materials are rendered to this url:
 
-https://scads.github.io/EMBOBioImage2025/intro.html
+https://scads.github.io/llm-bia-2025/intro.html
 
