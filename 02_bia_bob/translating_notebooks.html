@@ -61,7 +61,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = '02_bia_bob/translating_notebooks';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Statistical testing" href="bia_bob-statistical_testing.html" />
+    <link rel="next" title="Documenting code" href="documenting_code.html" />
     <link rel="prev" title="AI-assisted Notebook generation" href="generate_notebook.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
@@ -191,8 +191,43 @@ const thebe_selector_output = ".output, .cell_output"
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="documenting_code.html">
+                        Documenting code
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="bug_fixing.html">
+                        Bug fixing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="bia_bob-statistical_testing.html">
                         Statistical testing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="gui_plots.html">
+                        Graphical user interfaces
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="generating_data.html">
+                        Generating data
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="local_installation.html">
+                        Configuring Bia-bob
                       </a>
                     </li>
                 
@@ -352,8 +387,43 @@ const thebe_selector_output = ".output, .cell_output"
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="documenting_code.html">
+                        Documenting code
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="bug_fixing.html">
+                        Bug fixing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="bia_bob-statistical_testing.html">
                         Statistical testing
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="gui_plots.html">
+                        Graphical user interfaces
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="generating_data.html">
+                        Generating data
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="local_installation.html">
+                        Configuring Bia-bob
                       </a>
                     </li>
                 
@@ -474,7 +544,19 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="generate_notebook.html">AI-assisted Notebook generation</a></li>
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Translating notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting_code.html">Documenting code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bug_fixing.html">Bug fixing</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-cases</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bia_bob-statistical_testing.html">Statistical testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gui_plots.html">Graphical user interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generating_data.html">Generating data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Configuring Bia-Bob</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="local_installation.html">Configuring Bia-bob</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="under_the_hood.html">Under the hood: Configure bia-bob’s <em>behaviour</em> through system messages</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Links</span></p>
@@ -670,14 +752,12 @@ LLMs make mistakes.</p>
 <p>First, we configure bia-bob:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load secret API key. You must unpack the contents of api_key.zip </span>
-<span class="c1"># into the same folder before going ahead.</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
-<span class="n">load_dotenv</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#from dotenv import load_dotenv</span>
+<span class="c1">#load_dotenv()</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">bia_bob</span><span class="w"> </span><span class="kn">import</span> <span class="n">bob</span>
-<span class="n">bob</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">endpoint</span><span class="o">=</span><span class="s1">&#39;https://llm.scads.ai/v1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;openai/gpt-oss-120b&#39;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;SCADSAI_API_KEY&#39;</span><span class="p">))</span>
+<span class="n">bob</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">endpoint</span><span class="o">=</span><span class="s1">&#39;https://chat-ai.academiccloud.de/v1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;openai-gpt-oss-120b&#39;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;KISSKI_API_KEY&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -685,18 +765,18 @@ LLMs make mistakes.</p>
 <div class="output text_html">
             <div style="font-size:7pt">
             This notebook may contain text, code and images generated by artificial intelligence.
-            Used model: openai/gpt-oss-120b, vision model: None, endpoint: https://llm.scads.ai/v1, bia-bob version: 0.33.0.. Do not enter sensitive or private information and verify generated contents according to good scientific practice. Read more: <a href="https://github.com/haesleinhuepf/bia-bob#disclaimer">https://github.com/haesleinhuepf/bia-bob#disclaimer</a>
+            Used model: openai-gpt-oss-120b, vision model: None, endpoint: https://chat-ai.academiccloud.de/v1, bia-bob version: 0.34.3.. Do not enter sensitive or private information and verify generated contents according to good scientific practice. Read more: <a href="https://github.com/haesleinhuepf/bia-bob#disclaimer">https://github.com/haesleinhuepf/bia-bob#disclaimer</a>
             </div>
             </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">bob</span> translate blob_segmentation_and_average_area.ipynb to German
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">bob</span> translate blob_segmentation_and_area_analysis.ipynb to German
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<p>The modified notebook has been saved as <a class="reference external" href="blob_segmentation_and_average_area_1.ipynb">blob_segmentation_and_average_area_1.ipynb</a>.</p>
+<p>The modified notebook has been saved as <a class="reference external" href="blob_segmentation_and_area_analysis_1.ipynb">blob_segmentation_and_area_analysis_1.ipynb</a>.</p>
 </div>
 </div>
 <section id="exercise">
@@ -740,10 +820,10 @@ LLMs make mistakes.</p>
           <p class="prev-next-title">AI-assisted Notebook generation</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="bia_bob-statistical_testing.html" title="next page">
+  <a class='right-next' id="next-link" href="documenting_code.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Statistical testing</p>
+      <p class="prev-next-title">Documenting code</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
@@ -796,7 +876,7 @@ By Robert Haase
   
   <div class="footer-item">
     <p class="last-updated">
-Last updated on 2025-09-04.<br>
+Last updated on 2025-09-13.<br>
 </p>
   </div>
   
