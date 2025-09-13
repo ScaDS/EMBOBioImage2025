@@ -20,7 +20,17 @@ parts:
     - file: 02_bia_bob/bia-bob-demo.ipynb
     - file: 02_bia_bob/generate_notebook.ipynb
     - file: 02_bia_bob/translating_notebooks.ipynb
+    - file: 02_bia_bob/documenting_code.ipynb
+    - file: 02_bia_bob/bug_fixing.ipynb
+
+  - caption: Use-cases
     - file: 02_bia_bob/bia_bob-statistical_testing.ipynb
+    - file: 02_bia_bob/gui_plots.ipynb
+    - file: 02_bia_bob/generating_data.ipynb
+
+  - caption: Configuring Bia-Bob
+    chapters:
+    - file: 02_bia_bob/local_installation.ipynb
     - file: 02_bia_bob/under_the_hood.ipynb
     
   - caption: Links
