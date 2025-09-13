@@ -24,6 +24,7 @@ parts:
     - file: 02_bia_bob/bug_fixing.ipynb
 
   - caption: Use-cases
+    chapters:
     - file: 02_bia_bob/bia_bob-statistical_testing.ipynb
     - file: 02_bia_bob/gui_plots.ipynb
     - file: 02_bia_bob/generating_data.ipynb
