@@ -36,7 +36,7 @@ parts:
 
   - caption: Moving ahead
     chapters:
-    - file: further-exercises.md
+    - file: 02_bia_bob/further-exercises.md
     
   - caption: Links
     chapters:
