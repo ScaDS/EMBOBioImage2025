@@ -33,6 +33,10 @@ parts:
     chapters:
     - file: 02_bia_bob/local_installation.ipynb
     - file: 02_bia_bob/under_the_hood.ipynb
+
+  - caption: Moving ahead
+    chapters:
+    - file: further-exercises.md
     
   - caption: Links
     chapters:
