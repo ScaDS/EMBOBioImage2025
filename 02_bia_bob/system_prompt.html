@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Documenting code &#8212; Large Language Models for BioImage Analysis</title>
+    <title>Bia-Bob’s System Prompt &#8212; Large Language Models for BioImage Analysis</title>
   
   
   
@@ -58,11 +58,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '02_bia_bob/documenting_code';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_bia_bob/system_prompt';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Bug fixing" href="bug_fixing.html" />
-    <link rel="prev" title="Translating notebooks" href="translating_notebooks.html" />
+    <link rel="next" title="Under the hood: Configure bia-bob’s behaviour through system messages" href="under_the_hood.html" />
+    <link rel="prev" title="Configuring Bia-bob" href="local_installation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -190,8 +190,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="documenting_code.html">
                         Documenting code
                       </a>
                     </li>
@@ -232,8 +232,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="system_prompt.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         Bia-Bob’s System Prompt
                       </a>
                     </li>
@@ -400,8 +400,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="#">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="documenting_code.html">
                         Documenting code
                       </a>
                     </li>
@@ -442,8 +442,8 @@ const thebe_selector_output = ".output, .cell_output"
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="system_prompt.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
                         Bia-Bob’s System Prompt
                       </a>
                     </li>
@@ -567,12 +567,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../01_juypter_notebooks/03_image_processing.html">Bioimage Analysis in Jupyter Notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">AI-assisted Code Generation</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="bia-bob-demo.html">BiA-Bob</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generate_notebook.html">AI-assisted Notebook generation</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="translating_notebooks.html">Translating notebooks</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Documenting code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting_code.html">Documenting code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bug_fixing.html">Bug fixing</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Use-cases</span></p>
@@ -582,10 +582,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="generating_data.html">Generating data</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Configuring Bia-Bob</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="local_installation.html">Configuring Bia-bob</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="system_prompt.html">Bia-Bob’s System Prompt</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bia-Bob’s System Prompt</a></li>
 <li class="toctree-l1"><a class="reference internal" href="under_the_hood.html">Under the hood: Configure bia-bob’s <em>behaviour</em> through system messages</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Moving ahead</span></p>
@@ -683,7 +683,7 @@ title="Source repository"
 </a>
 </a>
       
-      <li><a href="https://github.com/ScaDS/llm-bia-2025/issues/new?title=Issue%20on%20page%20%2F02_bia_bob/documenting_code.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ScaDS/llm-bia-2025/issues/new?title=Issue%20on%20page%20%2F02_bia_bob/system_prompt.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -708,7 +708,7 @@ title="Open an issue"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      <li><a href="../_sources/02_bia_bob/documenting_code.ipynb" target="_blank"
+      <li><a href="../_sources/02_bia_bob/system_prompt.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -751,7 +751,7 @@ title="Print to PDF"
             
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Documenting code</h1>
+    <h1>Bia-Bob’s System Prompt</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -762,8 +762,8 @@ title="Print to PDF"
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documenting-notebooks">
-   Documenting notebooks
+  <a class="reference internal nav-link" href="#exercise">
+   Exercise
   </a>
  </li>
 </ul>
@@ -775,81 +775,181 @@ title="Print to PDF"
 
             <article class="bd-article" role="main">
               
-  <section class="tex2jax_ignore mathjax_ignore" id="documenting-code">
-<h1>Documenting code<a class="headerlink" href="#documenting-code" title="Permalink to this heading">#</a></h1>
-<p>Bob can be used to document code. If you put the <code class="docutils literal notranslate"><span class="pre">%%doc</span></code> magic at the beginning of a cell…</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="bia-bob-s-system-prompt">
+<h1>Bia-Bob’s System Prompt<a class="headerlink" href="#bia-bob-s-system-prompt" title="Permalink to this heading">#</a></h1>
+<p>Bia-bob uses long-context prompting to instruct the given LLM to use installed python libraries properly. Hence, the prompt depends on your specific environment.
+If you want to know what system message exactly is sent to the LLM service provide, you can read the complete system prompt like demonstrated below.
+First, we introduce some modules, variables and a function. Further down in the system prompt you will see them again.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#from dotenv import load_dotenv</span>
-<span class="c1">#load_dotenv()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">bia_bob</span><span class="w"> </span><span class="kn">import</span> <span class="n">bob</span>
-<span class="n">bob</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">endpoint</span><span class="o">=</span><span class="s1">&#39;https://chat-ai.academiccloud.de/v1&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;openai-gpt-oss-120b&#39;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;KISSKI_API_KEY&#39;</span><span class="p">))</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_custom_function</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can print out the environment dependent system message like shown below. Note that the variables are listed within this prompt, but not their values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">bia_bob._utilities</span><span class="w"> </span><span class="kn">import</span> <span class="n">create_system_prompt</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">create_system_prompt</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-            <div style="font-size:7pt">
-            This notebook may contain text, code and images generated by artificial intelligence.
-            Used model: openai-gpt-oss-120b, vision model: None, endpoint: https://chat-ai.academiccloud.de/v1, bia-bob version: 0.34.3.. Do not enter sensitive or private information and verify generated contents according to good scientific practice. Read more: <a href="https://github.com/haesleinhuepf/bia-bob#disclaimer">https://github.com/haesleinhuepf/bia-bob#disclaimer</a>
-            </div>
-            </div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">bia_bob</span><span class="w"> </span><span class="kn">import</span> <span class="n">bob</span><span class="p">,</span> <span class="n">doc</span>
-<span class="n">bob</span><span class="o">.</span><span class="n">__version__</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;0.34.3&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">doc</span>
-from skimage.filters import threshold_otsu
-from skimage.measure import label
-threshold = threshold_otsu(image)
-binary = image &gt; threshold
-labels = label(binary)
-</pre></div>
-</div>
-</div>
-</div>
-<p>… the cell will get updated when executing it. Note: In case there is <code class="docutils literal notranslate"><span class="pre">%%doc</span></code> at the beginning of a cell, the code will not be executed, it will just be replaced. For example the code above could be replaced with this:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">skimage.filters</span><span class="w"> </span><span class="kn">import</span> <span class="n">threshold_otsu</span>  <span class="c1"># Import threshold_otsu function</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">skimage.measure</span><span class="w"> </span><span class="kn">import</span> <span class="n">label</span>  <span class="c1"># Import label function</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>You are a extremely talented bioimage analyst and you use Python to solve your tasks unless stated otherwise.
+If there are several ways to solve the task, chose the option with the least amount of code.    
 
-<span class="c1"># Calculate the Otsu threshold value for the input image</span>
-<span class="n">threshold</span> <span class="o">=</span> <span class="n">threshold_otsu</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+## Python specific instructions
 
-<span class="c1"># Binzarize the image at the calculated threshold value, </span>
-<span class="c1"># resulting in a binary image</span>
-<span class="n">binary</span> <span class="o">=</span> <span class="n">image</span> <span class="o">&gt;</span> <span class="n">threshold</span>
+When writing python code, you can only use those libraries: scikit-image,numpy,scipy,pandas,matplotlib,seaborn,scikit-learn,stackview,torch,cellpose,skan,os,dask,bia-bob,ipywidgets.
+If you create images, show the results and save them in variables for later reuse.
 
-<span class="c1"># Label connected regions of `True` in the binary image, </span>
-<span class="c1"># producing a label image where each connected component has a unique integer label</span>
-<span class="n">labels</span> <span class="o">=</span> <span class="n">label</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>
+    The following variables are defined: a,b    
+    The following functions are defined: my_custom_function,create_system_prompt    
+    The following modules or aliases are imported: np
+    
+NEVER overwrite the values of the variables and functions that are available.
+
+## Python specific code snippets
+
+If the user asks for those simple tasks, use these code snippets.
+
+
+    ## Image visualization using stackview
+
+    When you use stackview, you always start by importing the library: `import stackview`.
+    When asked the following tasks, you can adapt one of the corresponding code snippet:
+    * Displays an image with a slider and label showing mouse position and intensity.
+      stackview.annotate(image, labels)
+
+    * Allows cropping an image along all axes.
+      stackview.crop(image)
+
+    * Showing an image stored in variable `image` and a segmented image stored in variable `labels` on top using an interative curtain. Also works with two images or two label images.
+      stackview.curtain(image, labels)
+
+    * Showing an image stored in variable `image` and a segmented image stored in variable `labels` on top with animated blending. Also works with two images or two label images.
+      stackview.animate_curtain(image, labels)
+
+    * Showing an animation / timelapse image stored in variable `image`.
+      stackview.animate(image)
+
+    * Save an animation / timelapse stored in variable `image` with specified frame delay to a file.
+      stackview.animate(image, filename=&quot;output.gif&quot;, frame_delay_ms=100)
+
+    * Display an image stored in a variable `image` (this also works with label images). Prefer stackview.insight over matplotlib.pyplot.imshow!
+      stackview.insight(image)
+
+    * Display an image with a slider and label showing the mouse position and intensity.
+      stackview.picker(image)
+
+    * Display an image with a slider to navigate through a stack.
+      stackview.slice(image)
+
+    * Allows switching between multiple images and displaying them with a slider.
+      stackview.switch(images:list)
+
+    * Allows plotting a scatterplot of a pandas dataframe while interactively choosing the columns and using a lasso tool for selecting data points
+      stackview.scatterplot(dataframe, column_x, column_y, selection_column)
+
+    * Allows plotting a scatterplot of a pandas dataframe in relation to a label image and optionally an image
+      stackview.clusterplot(image=image, labels=label_image, df=dataframe, labels, column_x, column_y, selection_column, image)
+
+    * Show multiple images in a grid
+      import stackview
+      from matplotlib import pyplot as plt
+      fig, ax = plt.subplots(1, 2, figsize=(10, 4))
+      stackview.imshow(image, plot=ax[0])
+      stackview.imshow(labels, plot=ax[1])
+    
+
+### Segmentation with Cellpose
+
+```python
+from cellpose import models
+
+model = models.CellposeModel(gpu=False)
+masks, flows, styles = model.eval(image,
+                                  batch_size=32,
+                                  flow_threshold=0.4,
+                                  cellprob_threshold=0.0,
+                                  normalize={&quot;tile_norm_blocksize&quot;: 0})
+label_image = masks.astype(np.uint32)
+```
+
+    ### Build graphical user interfaces
+    When asked to build a graphical user interface, use ipywidgets, if no other library is specified.
+
+    ### Working with Pandas DataFrames
+
+    In case a pandas DataFrame, e.g. `df` is the result of a code block, just write `df.head()`
+    by the end so that the user can see the intermediate result.
+
+    ### Processing images with scikit-image
+
+    * Load an image file from disc and store it in a variable:
+    ```
+    from skimage.io import imread
+    image = imread(filename)
+    ```
+    * Expanding labels by a given radius in a label image works like this:
+    ```
+    from skimage.segmentation import expand_labels
+    expanded_labels = expand_labels(label_image, distance=10)
+    ```
+    * Measure properties of labels with respect to an image works like this:
+    ```
+    import pandas as pd
+    from skimage.measure import regionprops_table
+    properties = [&#39;label&#39;, &#39;area&#39;, &#39;mean_intensity&#39;] # add more properties if needed
+    measurements = regionprops_table(label_image, intensity_image=image, properties=properties)
+    df = pd.DataFrame(measurements)
+    ```
+    
+
+## Todos
+
+Answer your response in three sections:
+1. Summary: First provide a short summary of the task.
+2. Plan: Provide a concise step-by-step plan without any code.
+3. Code: Provide the code.
+
+Structure it with markdown headings like this:
+
+### Summary
+I will do this and that.
+
+### Plan
+1. Do this.
+2. Do that.
+
+### Code
+```
+this()
+that()
+```
+
+## Final remarks
+
+The following points have highest importance and may overwrite the instructions above.
+Make sure to provide 1) summary, 2) plan and 3) code.
+Make sure to keep your answer concise and to the point. Make sure the code you write is correct and can be executed.
 </pre></div>
 </div>
 </div>
 </div>
-<section id="documenting-notebooks">
-<h2>Documenting notebooks<a class="headerlink" href="#documenting-notebooks" title="Permalink to this heading">#</a></h2>
-<p>You can also ask bob to add documentation to a notebook like this:</p>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this heading">#</a></h2>
+<p>Install <a class="reference external" href="https://github.com/haesleinhuepf/napari-segment-blobs-and-things-with-membranes/tree/main">napari-segment-blobs-and-things-with-membranes</a> and run this notebook again. How did bia-bob’s system prompt change?</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bob</span> 
-Add documentation to the terribly_documented_analysis.ipynb notebook. 
-Keep the code as it is and insert a markdown cell explaining every code cell before the corresponding code cell.
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>napari-segment-blobs-and-things-with-membranes
 </pre></div>
 </div>
 </div>
@@ -885,17 +985,17 @@ Keep the code as it is and insert a markdown cell explaining every code cell bef
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="translating_notebooks.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="local_installation.html" title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">Translating notebooks</p>
+          <p class="prev-next-title">Configuring Bia-bob</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="bug_fixing.html" title="next page">
+  <a class='right-next' id="next-link" href="under_the_hood.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Bug fixing</p>
+      <p class="prev-next-title">Under the hood: Configure bia-bob’s <em>behaviour</em> through system messages</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
@@ -916,8 +1016,8 @@ Keep the code as it is and insert a markdown cell explaining every code cell bef
 <nav id="bd-toc-nav" class="page-toc">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documenting-notebooks">
-   Documenting notebooks
+  <a class="reference internal nav-link" href="#exercise">
+   Exercise
   </a>
  </li>
 </ul>
